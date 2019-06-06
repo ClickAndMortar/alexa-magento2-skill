@@ -1,0 +1,22 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "fr-FR": {
+          "summary": "Demandez des informations à un site Magento 2",
+          "examplePhrases": [
+            "Alexa ouvre Magento"
+          ],
+          "name": "Magento 2"
+        }
+      }
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

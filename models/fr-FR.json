@@ -1,0 +1,119 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "magento",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetAverageOrder",
+          "samples": [
+            "Panier moyen",
+            "Donne le panier moyen",
+            "Quel est le panier moyen"
+          ]
+        },
+        {
+          "name": "GetBestsellers",
+          "samples": [
+            "Produits les plus vendus",
+            "Donne les produits les plus vendus",
+            "Quels sont les produits les plus vendus",
+            "Produits les mieux vendus",
+            "Donne les produits les mieux vendus",
+            "Quels sont les produits les mieux vendus"
+          ]
+        },
+        {
+          "name": "GetCustomersNowOnline",
+          "samples": [
+            "Nombre de clients connectés",
+            "Donne le nombre de clients connectés",
+            "Quel est le nombre de clients connectés",
+            "Nombre de clients en ligne",
+            "Donne le nombre de clients en ligne",
+            "Quel est le nombre de clients en ligne"
+          ]
+        },
+        {
+          "name": "GetOrdersCountForPeriod",
+          "slots": [
+            {
+                "name": "period",
+                "type": "Period"
+            }
+          ],
+          "samples": [
+            "Nombre de commandes pour le {period}",
+            "Donne le nombre de commandes pour le {period}",
+            "Quel est le nombre de commandes pour le {period}",
+            "Nombre de commandes pour les {period}",
+            "Donne le nombre de commandes pour les {period}",
+            "Quel est le nombre de commandes pour les {period}",
+            "Nombre de commandes du {period}",
+            "Donne le nombre de commandes du {period}",
+            "Quel est le nombre de commandes du {period}",
+            "Nombre de commandes des {period}",
+            "Donne le nombre de commandes des {period}",
+            "Quel est le nombre de commandes des {period}"
+          ]
+        },
+        {
+          "name": "GetTurnoverForPeriod",
+          "slots": [
+            {
+                "name": "period",
+                "type": "Period"
+            }
+          ],
+          "samples": [
+            "Chiffre d'affaires pour le {period}",
+            "Donne le chiffre d'affaires pour le {period}",
+            "Quel est le chiffre d'affaires pour le {period}",
+            "Chiffre d'affaires pour les {period}",
+            "Donne le chiffre d'affaires pour les {period}",
+            "Quel est le chiffre d'affaires pour les {period}",
+            "Chiffre d'affaires du {period}",
+            "Donne le chiffre d'affaires du {period}",
+            "Quel est le chiffre d'affaires du {period}",
+            "Chiffre d'affaires des {period}",
+            "Donne le chiffre d'affaires des {period}",
+            "Quel est le chiffre d'affaires des {period}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "Period",
+          "values": [
+            {
+              "name": {
+                  "value": "dernières vingt-quatre heures"
+              }
+            },
+            {
+                "name": {
+                    "value": "sept derniers jours"
+                }
+            },
+            {
+                "name": {
+                    "value": "mois"
+                }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
